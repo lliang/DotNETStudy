@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNETStudy.AOP.ConsoleApp"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNETStudy.AOP.WebApi", "AOP\DotNETStudy.AOP.WebApi\DotNETStudy.AOP.WebApi.csproj", "{6D94EF05-D550-4AD2-A3FA-A5F9482FB61D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNETStudy.AOP.ConsoleAOP", "AOP\DotNETStudy.AOP.ConsoleAOP\DotNETStudy.AOP.ConsoleAOP.csproj", "{91419213-806C-49EB-9830-0AD8981B2CD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{6D94EF05-D550-4AD2-A3FA-A5F9482FB61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D94EF05-D550-4AD2-A3FA-A5F9482FB61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D94EF05-D550-4AD2-A3FA-A5F9482FB61D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91419213-806C-49EB-9830-0AD8981B2CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91419213-806C-49EB-9830-0AD8981B2CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91419213-806C-49EB-9830-0AD8981B2CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91419213-806C-49EB-9830-0AD8981B2CD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{99C07BE7-0C32-42AE-A49C-F8E98E5CD05A} = {C9517C08-90B9-437D-BDBE-44DE65F553DA}
 		{6D94EF05-D550-4AD2-A3FA-A5F9482FB61D} = {C9517C08-90B9-437D-BDBE-44DE65F553DA}
+		{91419213-806C-49EB-9830-0AD8981B2CD7} = {C9517C08-90B9-437D-BDBE-44DE65F553DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {273C873E-756E-4FA2-8C37-FF10A8F04CD3}
