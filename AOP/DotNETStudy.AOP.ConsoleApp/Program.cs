@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 
 namespace DotNETStudy.AOP.ConsoleApp
@@ -161,6 +162,11 @@ namespace DotNETStudy.AOP.ConsoleApp
 
     /// <summary>
     /// 拦截器
+    /// AOP：可以对业务方法进行环绕
+    /// 好处：1. 代码复用；2. 非侵入式。
+    /// IOC：降低对象之间的依赖和复杂度
+    /// AOP：降低业务逻辑之间的依赖和复杂度
+    /// IOC + AOP：极大的提高代码的利用率
     /// </summary>
     public class Interceptor
     {
@@ -171,9 +177,14 @@ namespace DotNETStudy.AOP.ConsoleApp
         /// <exception cref="Exception"></exception>
         public void Intercept(Invoketion invoketion)
         {
+            // 这里写的都是一些系统级别的逻辑
             try
             {
-                invoketion.Proceed();
+                var stopwatch = new Stopwatch();
+                stopwatch.Start();
+                invoketion.Proceed();// 执行主逻辑
+                stopwatch.Stop();
+                Console.WriteLine(stopwatch.ElapsedMilliseconds);
             }
             catch (Exception e)
             {
