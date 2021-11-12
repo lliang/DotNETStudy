@@ -1,10 +1,17 @@
 using System.Diagnostics;
+using AspectCore.Extensions.DependencyInjection;
+using DotNETStudy.AOP.WebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Host.UseServiceProviderFactory(new DynamicProxyServiceProviderFactory());
+
 // Add services to the container.
+builder.Services.AddTransient<ICustomService, CustomService>();
 
 builder.Services.AddControllers();
+
+builder.Services.ConfigureDynamicProxy();
 
 var app = builder.Build();
 
