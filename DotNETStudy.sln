@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNETStudy.AOP.ConsoleAOP"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IoC", "IoC", "{17E37AD3-F9D2-4994-A73F-EA5159117A17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNETStudy.IoC.AutofacConsoleApp", "IoC\DotNETStudy.IoC.AutofacConsoleApp\DotNETStudy.IoC.AutofacConsoleApp.csproj", "{0F9081B2-7F74-4705-BC8D-7BC40271DEB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNETStudy.IoC.AutofacConsoleApp", "IoC\DotNETStudy.IoC.AutofacConsoleApp\DotNETStudy.IoC.AutofacConsoleApp.csproj", "{0F9081B2-7F74-4705-BC8D-7BC40271DEB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNETStudy.IoC.ConsoleIoC", "IoC\DotNETStudy.IoC.ConsoleIoC\DotNETStudy.IoC.ConsoleIoC.csproj", "{9186B237-FF92-4B61-9646-4868D975FCE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{0F9081B2-7F74-4705-BC8D-7BC40271DEB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F9081B2-7F74-4705-BC8D-7BC40271DEB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F9081B2-7F74-4705-BC8D-7BC40271DEB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9186B237-FF92-4B61-9646-4868D975FCE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9186B237-FF92-4B61-9646-4868D975FCE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9186B237-FF92-4B61-9646-4868D975FCE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9186B237-FF92-4B61-9646-4868D975FCE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{6D94EF05-D550-4AD2-A3FA-A5F9482FB61D} = {C9517C08-90B9-437D-BDBE-44DE65F553DA}
 		{91419213-806C-49EB-9830-0AD8981B2CD7} = {C9517C08-90B9-437D-BDBE-44DE65F553DA}
 		{0F9081B2-7F74-4705-BC8D-7BC40271DEB3} = {17E37AD3-F9D2-4994-A73F-EA5159117A17}
+		{9186B237-FF92-4B61-9646-4868D975FCE2} = {17E37AD3-F9D2-4994-A73F-EA5159117A17}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {273C873E-756E-4FA2-8C37-FF10A8F04CD3}

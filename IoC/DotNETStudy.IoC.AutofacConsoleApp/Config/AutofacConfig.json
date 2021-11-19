@@ -1,0 +1,15 @@
+﻿{
+  "defaultAssembly": "DotNETStudy.IoC.AutofacConsoleApp",
+  "components": [
+    {
+      "type": "DotNETStudy.IoC.AutofacConsoleApp.ConsoleOutput, DotNETStudy.IoC.AutofacConsoleApp",
+      "services": [
+        {
+          "type": "DotNETStudy.IoC.AutofacConsoleApp.IOutput, DotNETStudy.IoC.AutofacConsoleApp"
+        }
+      ],
+      "instanceScope": "single-instance",
+      "injectProperties": true
+    }
+  ]
+}
