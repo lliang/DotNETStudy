@@ -1,10 +1,26 @@
 ﻿using System;
 using Autofac;
+using DotNETStudy.IoC.AutofacConsoleApp.Components;
 
 namespace DotNETStudy.IoC.AutofacConsoleApp
 {
     public class Program
     {
+        static void Main(string[] args)
+        {
+            var builder = new ContainerBuilder();
+
+            builder.RegisterType<MyComponent>();
+            builder.RegisterType<ConsoleLogger>().As<ILogger>();
+
+            var container = builder.Build();
+
+            using (var scope = container.BeginLifetimeScope())
+            {
+                var component = scope.Resolve<MyComponent>();
+            }
+        }
+
         /*
          * Add Autofac references.
          * At application startup…
@@ -18,7 +34,7 @@ namespace DotNETStudy.IoC.AutofacConsoleApp
 
         private static IContainer Container { get; set; }
 
-        static void Main(string[] args)
+        static void Main5(string[] args)
         {
             AutofacExt.InitAutofac();
             var writer = AutofacExt.GetFromAutofac<IOutput>();
@@ -33,6 +49,7 @@ namespace DotNETStudy.IoC.AutofacConsoleApp
 
             // 单例
             builder.RegisterType<EnglishStudy>().SingleInstance();
+            // 注册时传递参数
             builder.RegisterType<MathStudy>().AsSelf().WithParameter(new TypedParameter(typeof(string), "section 6"));
 
             Container = builder.Build();
