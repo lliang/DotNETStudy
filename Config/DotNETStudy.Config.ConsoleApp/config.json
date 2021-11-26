@@ -1,0 +1,13 @@
+﻿{
+  "name": "liu liang",
+  "age": "35",
+  "proxy": {
+    "address": "127.0.0.1",
+    "port": 1080
+  },
+  "person": {
+    "name": "liu liang",
+    "age": 35,
+    "address": "Beijing"
+  }
+}
