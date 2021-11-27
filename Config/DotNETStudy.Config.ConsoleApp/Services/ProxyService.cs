@@ -17,6 +17,5 @@ namespace DotNETStudy.Config.ConsoleApp.Services
         {
             Console.WriteLine($"proxy: {_proxyOptions.Value.Address}:{_proxyOptions.Value.Port}");
         }
-
     }
 }
