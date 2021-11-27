@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNETStudy.Config.ConsoleA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNETStudy.Config.CommandLine", "Config\DotNETStudy.Config.CommandLine\DotNETStudy.Config.CommandLine.csproj", "{B6F9B5D3-899F-4223-AC41-F4C023BE8597}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNETStudy.Config.Environment", "Config\DotNETStudy.Config.Environment\DotNETStudy.Config.Environment.csproj", "{713FFFC8-B70F-4BA3-8ED6-1938A9B797E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{B6F9B5D3-899F-4223-AC41-F4C023BE8597}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6F9B5D3-899F-4223-AC41-F4C023BE8597}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6F9B5D3-899F-4223-AC41-F4C023BE8597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{713FFFC8-B70F-4BA3-8ED6-1938A9B797E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{713FFFC8-B70F-4BA3-8ED6-1938A9B797E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{713FFFC8-B70F-4BA3-8ED6-1938A9B797E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{713FFFC8-B70F-4BA3-8ED6-1938A9B797E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{600BAC0E-D2DB-4C9A-896C-2CA81904DE76} = {C9517C08-90B9-437D-BDBE-44DE65F553DA}
 		{190DEB7C-D9AA-4D6B-B52F-F4D2A423DF99} = {74D63978-E7B6-485B-A682-79A3494F7651}
 		{B6F9B5D3-899F-4223-AC41-F4C023BE8597} = {74D63978-E7B6-485B-A682-79A3494F7651}
+		{713FFFC8-B70F-4BA3-8ED6-1938A9B797E9} = {74D63978-E7B6-485B-A682-79A3494F7651}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {273C873E-756E-4FA2-8C37-FF10A8F04CD3}

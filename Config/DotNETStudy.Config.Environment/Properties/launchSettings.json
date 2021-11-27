@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "DotNETStudy.Config.Environment": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "Test_name": "liu liang",
+        "Test_age": "35"
+      }
+    }
+  }
+}
