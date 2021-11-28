@@ -25,9 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNETStudy.Config.ConsoleA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNETStudy.Config.CommandLine", "Config\DotNETStudy.Config.CommandLine\DotNETStudy.Config.CommandLine.csproj", "{B6F9B5D3-899F-4223-AC41-F4C023BE8597}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNETStudy.Config.Environment", "Config\DotNETStudy.Config.Environment\DotNETStudy.Config.Environment.csproj", "{713FFFC8-B70F-4BA3-8ED6-1938A9B797E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNETStudy.Config.Environment", "Config\DotNETStudy.Config.Environment\DotNETStudy.Config.Environment.csproj", "{713FFFC8-B70F-4BA3-8ED6-1938A9B797E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNETStudy.Config.CustomConfigProvider", "Config\DotNETStudy.Config.CustomConfigProvider\DotNETStudy.Config.CustomConfigProvider.csproj", "{DB2236D5-B0E3-4ADA-AD60-0035375D6B1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNETStudy.Config.CustomConfigProvider", "Config\DotNETStudy.Config.CustomConfigProvider\DotNETStudy.Config.CustomConfigProvider.csproj", "{DB2236D5-B0E3-4ADA-AD60-0035375D6B1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Async", "Async", "{BEEC05DD-9B58-4FBD-93C8-B701D0BBD22D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNETStudy.Async.ConsoleApp", "Async\DotNETStudy.Async.ConsoleApp\DotNETStudy.Async.ConsoleApp.csproj", "{000D67E1-C353-48C2-827B-B1FE1F680E72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,10 @@ Global
 		{DB2236D5-B0E3-4ADA-AD60-0035375D6B1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB2236D5-B0E3-4ADA-AD60-0035375D6B1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB2236D5-B0E3-4ADA-AD60-0035375D6B1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{000D67E1-C353-48C2-827B-B1FE1F680E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{000D67E1-C353-48C2-827B-B1FE1F680E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{000D67E1-C353-48C2-827B-B1FE1F680E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{000D67E1-C353-48C2-827B-B1FE1F680E72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +98,7 @@ Global
 		{B6F9B5D3-899F-4223-AC41-F4C023BE8597} = {74D63978-E7B6-485B-A682-79A3494F7651}
 		{713FFFC8-B70F-4BA3-8ED6-1938A9B797E9} = {74D63978-E7B6-485B-A682-79A3494F7651}
 		{DB2236D5-B0E3-4ADA-AD60-0035375D6B1A} = {74D63978-E7B6-485B-A682-79A3494F7651}
+		{000D67E1-C353-48C2-827B-B1FE1F680E72} = {BEEC05DD-9B58-4FBD-93C8-B701D0BBD22D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {273C873E-756E-4FA2-8C37-FF10A8F04CD3}
