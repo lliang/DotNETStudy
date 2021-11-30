@@ -20,6 +20,8 @@ namespace DotNETStudy.Async.ConsoleApp
     {
         // 通过反编译软件查看代码
         // await、async 是“语法糖”，最终编译成“状态机调用”
+        // async 的方法会被 C# 编译器编译成一个类，会主要根据 await 调用进行切分为多个状态
+        // 对 async 方法的调用会被拆分为对 MoveNext 的调用
         static async Task Main(string[] args)
         {
             using (HttpClient httpClient = new HttpClient())
