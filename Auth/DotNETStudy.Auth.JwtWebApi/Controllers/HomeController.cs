@@ -30,7 +30,6 @@ namespace DotNETStudy.Auth.JwtWebApi.Controllers
                 return RedirectToAction("Error");
             }
 
-            IActionResult response = Unauthorized();
             var user = _userRepositoryService.GetUser(userModel);
 
             if (user != null)

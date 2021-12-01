@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using DotNETStudy.Auth.JwtWebApi.Dtos;
 using DotNETStudy.Auth.JwtWebApi.Models;
@@ -12,10 +13,10 @@ namespace DotNETStudy.Auth.JwtWebApi.Services
         {
             _userCollection.AddRange(new[]
             {
-                new UserDto("Anu Viswan","anu","admin"),
-                new UserDto("Jia Anu","jia","admin"),
-                new UserDto("Naina Anu","naina","admin"),
-                new UserDto("Sreena Anu","sree","admin"),
+                new UserDto(Guid.NewGuid(), "Anu Viswan", "anu", "18710228888"),
+                new UserDto(Guid.NewGuid(), "Jia Anu", "anu", "17613128735"),
+                new UserDto(Guid.NewGuid(), "Naina Anu", "anu", "18916830198"),
+                new UserDto(Guid.NewGuid(), "Sreena Anu", "anu", "13258685816"),
             });
         }
 

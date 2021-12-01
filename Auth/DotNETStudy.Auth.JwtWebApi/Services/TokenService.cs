@@ -15,13 +15,13 @@ namespace DotNETStudy.Auth.JwtWebApi.Services
         {
             var claims = new[]
             {
-                new Claim(ClaimTypes.Name, user.UserName),
-                new Claim(ClaimTypes.Role, user.Role),
-                new Claim(ClaimTypes.NameIdentifier, Guid.NewGuid().ToString())
+                new Claim(Claims.ClaimTypes.Subject, user.UserName),
+                new Claim(Claims.ClaimTypes.SessionId, Guid.NewGuid().ToString()),
+                new Claim(Claims.ClaimTypes.PhoneNumber, user.PhoneNumber)
             };
 
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
-            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
             var tokenDescriptor = new JwtSecurityToken(issuer, issuer, claims, expires: DateTime.UtcNow.Add(ExpiryDuration), signingCredentials: credentials);
 
             return new JwtSecurityTokenHandler().WriteToken(tokenDescriptor);
