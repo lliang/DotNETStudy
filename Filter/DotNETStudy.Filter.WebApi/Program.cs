@@ -1,6 +1,11 @@
+using DotNETStudy.Filter.WebApi.Attributes;
+using DotNETStudy.Filter.WebApi.Options;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.Configure<PositionOptions>(builder.Configuration.GetSection(PositionOptions.Position));
+builder.Services.AddScoped<MyActionFilterAttribute>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
