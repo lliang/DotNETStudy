@@ -9,5 +9,27 @@
     "name": "liu liang",
     "age": 35,
     "address": "Beijing"
-  }
+  },
+  "WcfServices": [
+    {
+      "Name": "A",
+      "Address": "http://127.0.0.1",
+      "Binding": "basicHttpBinding"
+    },
+    {
+      "Name": "B",
+      "Address": "http://127.0.0.1",
+      "Binding": "basicHttpBinding"
+    },
+    {
+      "Name": "C",
+      "Address": "http://127.0.0.1",
+      "Binding": "basicHttpBinding"
+    },
+    {
+      "Name": "D",
+      "Address": "http://127.0.0.1",
+      "Binding": "basicHttpBinding"
+    }
+  ]
 }

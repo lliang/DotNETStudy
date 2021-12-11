@@ -15,6 +15,23 @@ namespace DotNETStudy.Config.ConsoleApp
             IConfigurationRoot configRoot = configBuilder.Build();
 
             ServiceCollection services = new ServiceCollection();
+            services.AddOptions().Configure<WcfServicesOptions>(p => configRoot.GetSection(WcfServicesOptions.WcfServices).Bind(p.ProxyConfigs));
+
+            services.AddTransient<WcfService>();
+
+            using var sp = services.BuildServiceProvider();
+            var proxyService = sp.GetRequiredService<WcfService>();
+            proxyService.Print();
+        }
+
+        static void Main3(string[] args)
+        {
+            ConfigurationBuilder configBuilder = new ConfigurationBuilder();
+            configBuilder.AddJsonFile("config.json", optional: false, reloadOnChange: true);
+
+            IConfigurationRoot configRoot = configBuilder.Build();
+
+            ServiceCollection services = new ServiceCollection();
             services.AddOptions().Configure<ProxyOptions>(p => configRoot.GetSection(ProxyOptions.Proxy).Bind(p));
 
             services.AddTransient<ProxyService>();
