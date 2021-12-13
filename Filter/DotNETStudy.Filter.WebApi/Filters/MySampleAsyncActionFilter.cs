@@ -13,6 +13,12 @@ namespace DotNETStudy.Filter.WebApi.Filters
             _logger = logger;
         }
 
+        /// <summary>
+        /// 异步筛选器定义 On-Stage-ExecutionAsync 方法。
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="next">执行操作方法的委托</param>
+        /// <returns></returns>
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
             _logger.LogInformation($"Do something before the action executes. {MethodBase.GetCurrentMethod()}, {context.HttpContext.Request.Path}");

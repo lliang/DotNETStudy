@@ -14,6 +14,7 @@ namespace DotNETStudy.Filter.WebApi.Controllers
     ///     控制器和页面筛选器的 after 代码。
     /// 全局筛选器的 after 代码。
     /// 
+    /// 重写默认顺序：
     /// 可以通过实现 IOrderedFilter 来重写默认执行序列。 IOrderedFilter 公开了 Order 属性来确定执行顺序，该属性优先于作用域。
     /// 在确定筛选器的运行顺序时，Order 属性重写作用域。 先按顺序对筛选器排序，然后使用作用域消除并列问题。
     /// 所有内置筛选器实现 IOrderedFilter 并将默认 Order 值设为 0。
@@ -30,6 +31,7 @@ namespace DotNETStudy.Filter.WebApi.Controllers
             return Content("Examine the headers using the F12 developer tools.");
         }
 
+        [AddHeader("Author", "Liu Liang")]
         [ServiceFilter(typeof(MyActionFilterAttribute))]
         [HttpGet("AddHeaderByActionFilter")]
         public IActionResult AddHeaderByActionFilter()

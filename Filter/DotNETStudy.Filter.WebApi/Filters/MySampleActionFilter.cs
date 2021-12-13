@@ -1,6 +1,11 @@
 ﻿using System.Reflection;
 using Microsoft.AspNetCore.Mvc.Filters;
 
+/// <summary>
+/// 筛选器通过不同的接口定义支持同步和异步实现。
+/// 同步筛选器在其管道阶段之前和之后运行代码。
+/// 异步筛选器定义 On-Stage-ExecutionAsync 方法。
+/// </summary>
 namespace DotNETStudy.Filter.WebApi.Filters
 {
     /// <summary>

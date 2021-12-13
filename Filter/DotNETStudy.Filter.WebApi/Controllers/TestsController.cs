@@ -11,6 +11,11 @@ namespace DotNETStudy.Filter.WebApi.Controllers
     /// Controller.OnActionExecuting 、
     /// Controller.OnActionExecutionAsync 和
     /// Controller.OnActionExecuted 方法。
+    /// 
+    /// 覆盖为给定操作运行的筛选器。
+    /// OnActionExecuting 在所有操作筛选器之前调用。
+    /// OnActionExecuted 在所有操作筛选器之后调用。
+    /// OnActionExecutionAsync 在所有操作筛选器之前调用。 next 之后的筛选器中的代码在操作方法之后运行。
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
@@ -24,6 +29,7 @@ namespace DotNETStudy.Filter.WebApi.Controllers
         }
 
         [TypeFilter(typeof(MySampleAsyncActionFilter))]
+        [ServiceFilter(typeof(AddHeaderResultServiceFilter))]
         [HttpGet("TestAsyncActionFilter")]
         public IActionResult TestAsyncActionFilter()
         {

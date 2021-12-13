@@ -2,9 +2,15 @@
 
 namespace DotNETStudy.Filter.WebApi.Attributes
 {
-    public class MySampleActionFilterAttribute : IAsyncActionFilter
+    /// <summary>
+    /// 可以在单个类中实现多个筛选器阶段的接口
+    /// </summary>
+    public class MySampleActionFilterAttribute : IAsyncActionFilter, IAsyncResultFilter
     {
         /*
+         * 同步：IActionFilter 和 IResultFilter
+         * 异步：IAsyncActionFilter 和 IAsyncResultFilter
+         * 
          * 筛选器接口的同步和异步版本任意实现一个，而不是同时实现。
          * 运行时会先查看筛选器是否实现了异步接口：
          * 如果是，则调用该接口。 
@@ -24,6 +30,11 @@ namespace DotNETStudy.Filter.WebApi.Attributes
                 }*/
 
         public Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task OnResultExecutionAsync(ResultExecutingContext context, ResultExecutionDelegate next)
         {
             throw new NotImplementedException();
         }

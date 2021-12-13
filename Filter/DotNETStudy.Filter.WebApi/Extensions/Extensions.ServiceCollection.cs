@@ -12,6 +12,8 @@ namespace DotNETStudy.Filter.WebApi.Extensions
     {
         public static IServiceCollection AddFilters(this IServiceCollection services)
         {
+            services.AddScoped<AddHeaderResultServiceFilter>();
+
             services.AddControllers(options =>
             {
                 options.Filters.Add(typeof(MySampleActionFilter));
