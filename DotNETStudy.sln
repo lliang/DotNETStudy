@@ -55,6 +55,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ocelot", "Ocelot", "{4BE615
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNETStudy.Ocelot.WebApi", "Ocelot\DotNETStudy.Ocelot.WebApi\DotNETStudy.Ocelot.WebApi.csproj", "{C942D742-8586-460F-A789-BEC4FBF3EB0A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Consul", "Consul", "{961D4C92-837F-4C19-B6DE-E79F1A33C2EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNETStudy.Consul.ConsulApi", "Consul\DotNETStudy.Consul.ConsulApi\DotNETStudy.Consul.ConsulApi.csproj", "{5EB01E4B-780C-4F6D-861C-25C8E97E959A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -133,6 +137,10 @@ Global
 		{C942D742-8586-460F-A789-BEC4FBF3EB0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C942D742-8586-460F-A789-BEC4FBF3EB0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C942D742-8586-460F-A789-BEC4FBF3EB0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EB01E4B-780C-4F6D-861C-25C8E97E959A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB01E4B-780C-4F6D-861C-25C8E97E959A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB01E4B-780C-4F6D-861C-25C8E97E959A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB01E4B-780C-4F6D-861C-25C8E97E959A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -156,6 +164,7 @@ Global
 		{8C562471-C6D5-4936-9C78-CB46B0C5AC80} = {5A78C34B-4AC8-4D07-8581-2D9F655CCD88}
 		{CF88053B-F10F-4B1E-B3BB-D243C27AA4B4} = {28B0B292-0BB9-4F63-BBCB-27F7A5B06E54}
 		{C942D742-8586-460F-A789-BEC4FBF3EB0A} = {4BE6158C-6757-4D21-802C-FD81DD23E661}
+		{5EB01E4B-780C-4F6D-861C-25C8E97E959A} = {961D4C92-837F-4C19-B6DE-E79F1A33C2EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {273C873E-756E-4FA2-8C37-FF10A8F04CD3}
